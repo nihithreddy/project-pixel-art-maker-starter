@@ -2,7 +2,9 @@
 const colorInput = document.querySelector("#colorPicker")
 
 function makeGrid() {
-    // Your code goes here!
+    /**
+     * @desc creates a grid of squares of size rows and columns
+     */
     const tableElement =  document.querySelector("#pixelCanvas")
     const prevTableBody = document.getElementsByTagName("tbody")
     //Clear the previous grid
