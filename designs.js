@@ -1,5 +1,7 @@
 
 const colorInput = document.querySelector("#colorPicker")
+const inputHeight = document.getElementById("inputHeight")
+const inputWidth = document.getElementById("inputWidth")
 
 function makeGrid() {
     /**
@@ -12,8 +14,8 @@ function makeGrid() {
         tableElement.removeChild(prevTableBody[0])
     }
     //Parsing the rows (height) and columns (width) values
-    const rows = parseInt(document.getElementById("inputHeight").value)
-    const columns = parseInt(document.getElementById("inputWidth").value)
+    const rows = parseInt(inputHeight.value)
+    const columns = parseInt(inputWidth.value)
     const tableBody = document.createElement("tbody")
     //Dynamically creating the canvas
     for(let row = 0; row < rows; row ++){
